@@ -60,30 +60,4 @@ them, a later, bigger gate causes measurably more churn than an earlier one.
 
 **Keep the gate at level 30. Do not roll out gate_40.** The later gate placement does not
 improve retention for any player segment, and it measurably harms retention among the game's
-most engaged players — the ones with the highest long-term value.
-
-## Repo Structure
-
-```
-ab_testing_project/
-├── README.md
-├── data/
-│   └── cookie_cats.csv
-├── sql/
-│   └── analysis_queries.sql       # all SQL: table creation, validation, retention, segments
-└── notebook/
-    └── ab_test_analysis.ipynb     # z-tests and significance testing
-```
-
-## How to Reproduce
-
-1. Load `cookie_cats.csv` into PostgreSQL using the schema and queries in `sql/analysis_queries.sql`
-2. Run the notebook in `notebook/` to reproduce the z-test results
-3. All queries and code use PostgreSQL 18 and Python 3 with `scipy`, `numpy`
-
-## Possible Extensions
-
-- Power analysis to confirm the test's sample size was adequate to detect this effect size
-- Re-test after a longer holdout period to confirm the 7-day effect doesn't itself fade over time
-- Test whether the effect differs by acquisition channel or platform (iOS vs Android), if that
-  data were available
+most engaged players, the ones with the highest long-term value.
