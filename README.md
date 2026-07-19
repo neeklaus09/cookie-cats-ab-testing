@@ -1,4 +1,4 @@
-# A/B Testing: Cookie Cats — Does Delaying the Progression Gate Hurt Retention?
+# A/B Testing: Cookie Cats , Does Delaying the Progression Gate Hurt Retention?
 
 An analysis of a real, randomized A/B test from the mobile game **Cookie Cats**, testing whether
 moving a progression gate from level 30 to level 40 affects player retention.
